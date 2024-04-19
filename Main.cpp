@@ -1,6 +1,8 @@
 #include "TestHarness.h"
 #include <iostream>
-#include "Game.hpp"
+#include "Game.h"
+#include "Piece.h"
+#include "Board.h"
 
 int main()
 {
@@ -10,7 +12,12 @@ int main()
   TestResult tr;
   TestRegistry::runAllTests(tr);
 
-  func();
+  // ChessColor::Color color = ChessColor::WHITE;
+
+  Board b; 
+  b.printBits();
+  b.printBoard();
+
 
   return 0;
 }
