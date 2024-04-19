@@ -4,109 +4,87 @@
 #include <iostream>
 #include <string>
 
-namespace ChessColor{
-    enum Color {
-        WHITE,
-        BLACK
-    };
+namespace ChessColor {
+enum Color { WHITE, BLACK };
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Virtual Piece class
 class Piece {
-public:
+   public:
     virtual void move() = 0;
 };
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Pawn class
 class Pawn : public Piece {
-public:
+   public:
     Pawn(ChessColor::Color pieceColor) : color(pieceColor) {}
 
-    void move() override {
-        std::cout << "Pawn moved" << std::endl;
-    }
+    void move() override { std::cout << "Pawn moved" << std::endl; }
 
-private:
+   private:
     ChessColor::Color color;
 };
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Knight class
 class Knight : public Piece {
-public:
+   public:
     Knight(ChessColor::Color pieceColor) : color(pieceColor) {}
 
-    void move() override {
-        std::cout << "Knight moved" << std::endl;
-    }
+    void move() override { std::cout << "Knight moved" << std::endl; }
 
-private:
+   private:
     ChessColor::Color color;
 };
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Bishop class
 class Bishop : public Piece {
-public:
+   public:
     Bishop(ChessColor::Color pieceColor) : color(pieceColor) {}
 
-    void move() override {
-        std::cout << "Bishop moved" << std::endl;
-    }
+    void move() override { std::cout << "Bishop moved" << std::endl; }
 
-private:
+   private:
     ChessColor::Color color;
 };
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Rook class
 class Rook : public Piece {
-public:
+   public:
     Rook(ChessColor::Color pieceColor) : color(pieceColor) {}
 
-    void move() override {
-        std::cout << "Rook moved" << std::endl;
-    }
+    void move() override { std::cout << "Rook moved" << std::endl; }
 
-private:
+   private:
     ChessColor::Color color;
 };
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Queen class
 class Queen : public Piece {
-public:
+   public:
     Queen(ChessColor::Color pieceColor) : color(pieceColor) {}
 
-    void move() override {
-        std::cout << "Queen moved" << std::endl;
-    }
+    void move() override { std::cout << "Queen moved" << std::endl; }
 
-private:
+   private:
     ChessColor::Color color;
 };
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // King class
 class King : public Piece {
-public:
+   public:
     King(ChessColor::Color pieceColor) : color(pieceColor) {}
 
-    void move() override {
-        std::cout << "King moved" << std::endl;
-    }
+    void move() override { std::cout << "King moved" << std::endl; }
 
-private:
+   private:
     ChessColor::Color color;
 };
 
-
-#endif // PIECE_H
+#endif  // PIECE_H

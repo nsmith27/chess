@@ -5,16 +5,17 @@
 #include <vector>
 
 class Board {
+   private:
+    std::vector<int32_t> grid;
+    std::map<int8_t, char> piece_to_val;
+    std::map<int8_t, char> val_to_piece;
+
    public:
     Board();
 
     void printBoard();
     void printBits();
 
-   private:
-    std::vector<int32_t> grid;
-    std::map<int, char> piece_to_val;
-    std::map<int, char> val_to_piece;
 
 
 };
@@ -36,4 +37,3 @@ class Board {
 // b -- 1101
 // n -- 1110
 // p -- 1111
-
