@@ -1,5 +1,4 @@
-#ifndef PRINT_FUNCTION_H
-#define PRINT_FUNCTION_H
+#pragma once
 
 #include <iostream>
 
@@ -8,4 +7,3 @@ void print(Args... args) {
     (std::cout << ... << args) << std::endl;
 }
 
-#endif

@@ -3,9 +3,8 @@
 #include "Board.h"
 #include "Game.h"
 #include "Piece.h"
-#include "printer.h"
 #include "TestHarness.h"
-
+#include "printer.h"
 
 int main() {
     // random number generator used in some tests

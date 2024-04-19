@@ -1,5 +1,4 @@
-#ifndef PIECE_H
-#define PIECE_H
+#pragma once
 
 #include <iostream>
 #include <string>
@@ -87,4 +86,4 @@ class King : public Piece {
     ChessColor::Color color;
 };
 
-#endif  // PIECE_H
+#pragma once

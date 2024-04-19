@@ -137,6 +137,7 @@
     <ClCompile Include="CppUnitLite\TestResult.cpp" />
     <ClCompile Include="CppUnitLite\WFailure.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="XxxTest.cpp" />
   </ItemGroup>

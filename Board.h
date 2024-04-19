@@ -5,20 +5,20 @@
 #include <vector>
 
 class Board {
-   private:
+private:
     std::vector<int32_t> grid;
     std::map<int8_t, char> piece_to_val;
     std::map<int8_t, char> val_to_piece;
 
-   public:
+public:
     Board();
 
     void printBoard();
     void printBits();
+    void getBoardStream(std::stringstream& ss);
+    void getBitStream(std::stringstream& ss);
+
     uint8_t getCoordinate(std::string coord);
-
-
-
 };
 
 // Piece Values in Grid
