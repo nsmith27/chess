@@ -13,5 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="CppUnitLite">
+      <UniqueIdentifier>{cffb757f-4b7f-4dd7-9532-cf4f611f04a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XxxTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CppUnitLite\Failure.cpp">
+      <Filter>CppUnitLite</Filter>
+    </ClCompile>
+    <ClCompile Include="CppUnitLite\Test.cpp">
+      <Filter>CppUnitLite</Filter>
+    </ClCompile>
+    <ClCompile Include="CppUnitLite\TestRegistry.cpp">
+      <Filter>CppUnitLite</Filter>
+    </ClCompile>
+    <ClCompile Include="CppUnitLite\TestResult.cpp">
+      <Filter>CppUnitLite</Filter>
+    </ClCompile>
+    <ClCompile Include="CppUnitLite\WFailure.cpp">
+      <Filter>CppUnitLite</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Piece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

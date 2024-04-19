@@ -13,8 +13,8 @@ Game::Game() {
         {"promotion", {0, 20, 23}},
     };
 
-    game_board.printBits();
-    game_board.printBoard();
+    board.printBits();
+    board.printBoard();
 }
 
 uint8_t Game::extractBits(const uint32_t move, const int first_bit, const int last_bit) {

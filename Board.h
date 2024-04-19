@@ -15,6 +15,7 @@ class Board {
 
     void printBoard();
     void printBits();
+    uint8_t getCoordinate(std::string coord);
 
 
 

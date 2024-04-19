@@ -3,7 +3,9 @@
 #include "Board.h"
 #include "Game.h"
 #include "Piece.h"
+#include "printer.h"
 #include "TestHarness.h"
+
 
 int main() {
     // random number generator used in some tests
@@ -15,6 +17,8 @@ int main() {
     // ChessColor::Color color = ChessColor::WHITE;
 
     Game game;
+
+    print("Coordinate: ", game.board.getCoordinate("a1"));
 
     return 0;
 }

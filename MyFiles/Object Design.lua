@@ -31,7 +31,7 @@ How its accessed
 (7,0) (7,1) (7,2) (7,3) (7,4) (7,5) (7,6) (7,7)
 
 
-How its represented (8 32-bit integers)
+How it is represented (8 32-bit integers)
 0000 0000 0000 0000 0000 0000 0000 0000
 0000 0000 0000 0000 0000 0000 0000 0000
 0000 0000 0000 0000 0000 0000 0000 0000
@@ -137,6 +137,6 @@ white turn (human)
                 if same color king in check, do not include move
                 if same color piece, no include
                 if opposite color piece, include
-            
+
 
 

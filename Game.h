@@ -11,7 +11,6 @@
 
 class Game {
    private:
-    Board game_board;
     std::list<Piece*> white_pieces;
     std::list<Piece*> black_pieces;
     std::vector<uint32_t> move_stack;
@@ -20,6 +19,7 @@ class Game {
     uint8_t extractBits(uint32_t number, int start, int end);
 
    public:
+    Board board;
     Game();
     
     void getMove(const uint32_t move);
