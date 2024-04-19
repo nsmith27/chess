@@ -1,0 +1,14 @@
+functional
+possibly parallelized 
+dump grid
+
+move a pawn 
+SDL separate from the gameplay (no dependence)
+
+recording to file the game
+
+
+Tests
+bool IsMoveValid()
+
+reveal attacks
