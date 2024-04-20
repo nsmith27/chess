@@ -17,7 +17,6 @@ int main() {
 
     Game game;
 
-    print("Coordinate: ", game.board.getCoordinate("a1"));
 
     return 0;
 }
