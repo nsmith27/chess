@@ -21,6 +21,7 @@ TEST(Board, Get_Coordinate_From_Move) {
     CHECK_EQUAL(255, board.getCoordinateFromMove("a9"));  // row out of bounds
     CHECK_EQUAL(255, board.getCoordinateFromMove("h9"));  // both out of bounds
     CHECK_EQUAL(255, board.getCoordinateFromMove("j9"));  // both out of bounds
+    std::cout << std::endl;
 }
 
 TEST(Board, Get_Coordinate_From_Bits) {
@@ -35,8 +36,9 @@ TEST(Board, Get_Coordinate_From_Bits) {
     CHECK_EQUAL("h8", board.getCoordinateFromBits(63));
 
     // Test out of bounds coordinates
-    CHECK_EQUAL("00", board.getCoordinateFromBits(64));  // col out of bounds
-    CHECK_EQUAL("00", board.getCoordinateFromBits(-1));  // row out of bounds
+    CHECK_EQUAL("00", board.getCoordinateFromBits(64));
+    CHECK_EQUAL("00", board.getCoordinateFromBits(-1));
+    std::cout << std::endl;
 }
 
 TEST(Board, Read_Board_as_Bits) {
@@ -69,6 +71,28 @@ TEST(Board, Read_Board_as_Chars) {
         "|-| |-| |-| |-| |-| |-| |-| |-| \n"
         "|P| |P| |P| |P| |P| |P| |P| |P| \n"
         "|R| |N| |B| |Q| |K| |B| |N| |R| \n";
+
+    std::stringstream bs;
+    board.getBoardStream(bs);
+    CHECK_EQUAL(char_board, bs.str());
+}
+
+TEST(Board, Set_Pieces_on_Board_no_Validation) {
+    Board board;
+
+    std::string char_board =
+        "|P| |P| |P| |P| |P| |P| |P| |P| \n"
+        "|0| |0| |0| |0| |0| |0| |0| |0| \n"
+        "|p| |p| |p| |p| |p| |p| |p| |p| \n"
+        "|n| |n| |n| |n| |n| |n| |n| |n| \n"
+        "|b| |b| |b| |b| |b| |b| |b| |b| \n"
+        "|r| |r| |r| |r| |r| |r| |r| |r| \n"
+        "|q| |q| |q| |q| |q| |q| |q| |q| \n"
+        "|k| |k| |k| |k| |k| |k| |k| |k| \n";
+
+    for (int i = 0; i < 64; ++i) {
+        board.setPiece(i, (10 + (i / 8)) % 16);
+    }    
 
     std::stringstream bs;
     board.getBoardStream(bs);

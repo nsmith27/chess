@@ -21,13 +21,12 @@ class Game {
     std::list<Piece*> black_pieces;
     std::vector<uint32_t> move_stack;
 
-    uint8_t extractBits(uint32_t number, int start, int end);
-
    public:
     Board board;
     Game();
 
     void movePiece(std::string user_move);
+    std::vector<std::string> split(const std::string& str, char delim);
     void executeBitMove(const uint32_t stack_move);
     void addNewMoveToHistory();
     void interpretBitMove(const uint32_t stack_move);
